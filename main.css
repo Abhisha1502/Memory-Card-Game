@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background: linear-gradient(135deg, #ffe4e1, #fbcce1); /* Light pink background gradient */
+    margin: 0; /* Remove default body margin */
+    font-family: 'Arial', sans-serif; /* Use a nice font */
+    color: #333; /* Dark text color */
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #ff69b4; /* Hot pink cards */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.matched {
+    visibility: hidden;
+}
+
+button {
+    background-color: #e91e63; /* Deep pink button */
+    color: white;
+    border: none;
+    padding: 12px 20px; /* Increased padding */
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 8px; /* Slightly more rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #c2185b; /* Darker pink on hover */
+}
